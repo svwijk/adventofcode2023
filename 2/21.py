@@ -34,7 +34,7 @@ def retrieveinvalidthrows(dict: dict):
         if not badresult: 
             goodgames.append(key)
 
-def suminvalidthrowsgames(list: list):
+def sumlist(list: list):
     allresult = 0
     for item in list:
         allresult += int(item)
@@ -49,7 +49,7 @@ def main():
         addcontenttodict(line)
     retrieveinvalidthrows(allresults)
     #print(goodgames)
-    print(suminvalidthrowsgames(goodgames))
+    print(sumlist(goodgames))
 
 if __name__ == "__main__":
     main()
